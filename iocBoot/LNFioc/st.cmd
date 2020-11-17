@@ -14,7 +14,7 @@ LNFioc_registerRecordDeviceDriver pdbbase
 ## Load record instances
 ecAsynInit("/tmp/scan1", 1000000)
 
-dbLoadTemplate("db/LNFioc.substitutions")
+dbLoadTemplate "db/LNFioc.substitutions"
 
 #autosave:
 set_savefile_path("../save")
