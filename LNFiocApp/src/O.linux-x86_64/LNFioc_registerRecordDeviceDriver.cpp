@@ -257,16 +257,34 @@ static const dset * const devsl[40] = {
 };
 
 epicsShareExtern void (*pvar_func_asSub)(void);
+epicsShareExtern void (*pvar_func_save_restoreRegister)(void);
+epicsShareExtern void (*pvar_func_dbrestoreRegister)(void);
+epicsShareExtern void (*pvar_func_asInitHooksRegister)(void);
+epicsShareExtern void (*pvar_func_configMenuRegistrar)(void);
 
 epicsShareExtern int *pvar_int_asCaDebug;
 epicsShareExtern int *pvar_int_dbRecordsOnceOnly;
 epicsShareExtern int *pvar_int_dbBptNotMonotonic;
 epicsShareExtern int *pvar_int_dbTemplateMaxVars;
+epicsShareExtern int *pvar_int_save_restoreDebug;
+epicsShareExtern int *pvar_int_save_restoreNumSeqFiles;
+epicsShareExtern int *pvar_int_save_restoreSeqPeriodInSeconds;
+epicsShareExtern int *pvar_int_save_restoreIncompleteSetsOk;
+epicsShareExtern int *pvar_int_save_restoreDatedBackupFiles;
+epicsShareExtern int *pvar_int_save_restoreRemountThreshold;
+epicsShareExtern int *pvar_int_configMenuDebug;
 static struct iocshVarDef vardefs[] = {
 	{"asCaDebug", iocshArgInt, (void * const)pvar_int_asCaDebug},
 	{"dbRecordsOnceOnly", iocshArgInt, (void * const)pvar_int_dbRecordsOnceOnly},
 	{"dbBptNotMonotonic", iocshArgInt, (void * const)pvar_int_dbBptNotMonotonic},
 	{"dbTemplateMaxVars", iocshArgInt, (void * const)pvar_int_dbTemplateMaxVars},
+	{"save_restoreDebug", iocshArgInt, (void * const)pvar_int_save_restoreDebug},
+	{"save_restoreNumSeqFiles", iocshArgInt, (void * const)pvar_int_save_restoreNumSeqFiles},
+	{"save_restoreSeqPeriodInSeconds", iocshArgInt, (void * const)pvar_int_save_restoreSeqPeriodInSeconds},
+	{"save_restoreIncompleteSetsOk", iocshArgInt, (void * const)pvar_int_save_restoreIncompleteSetsOk},
+	{"save_restoreDatedBackupFiles", iocshArgInt, (void * const)pvar_int_save_restoreDatedBackupFiles},
+	{"save_restoreRemountThreshold", iocshArgInt, (void * const)pvar_int_save_restoreRemountThreshold},
+	{"configMenuDebug", iocshArgInt, (void * const)pvar_int_configMenuDebug},
 	{NULL, iocshArgInt, NULL}
 };
 
@@ -289,6 +307,10 @@ int LNFioc_registerRecordDeviceDriver(DBBASE *pbase)
     registerRecordTypes(pbase, 28, recordTypeNames, rtl);
     registerDevices(pbase, 40, deviceSupportNames, devsl);
     (*pvar_func_asSub)();
+    (*pvar_func_save_restoreRegister)();
+    (*pvar_func_dbrestoreRegister)();
+    (*pvar_func_asInitHooksRegister)();
+    (*pvar_func_configMenuRegistrar)();
     iocshRegisterVariable(vardefs);
     return 0;
 }

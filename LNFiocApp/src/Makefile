@@ -40,3 +40,4 @@ include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
 
+LNFioc_LIBS += autosave

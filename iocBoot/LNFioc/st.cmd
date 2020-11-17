@@ -12,10 +12,20 @@ dbLoadDatabase "dbd/LNFioc.dbd"
 LNFioc_registerRecordDeviceDriver pdbbase
 
 ## Load record instances
-#dbLoadRecords("db/xxx.db","user=marcoHost")
+ecAsynInit("/tmp/scan1", 1000000)
 
+dbLoadTemplate("db/LNFioc.substitutions")
+
+#autosave:
+set_savefile_path("../save")
+set_pass0_restoreFile("LNFioc.sav")
+set_pass1_restoreFile("LNFioc.sav")
+save_restoreSet_RetrySeconds(120)
+set_requestfile_path( "./") 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
 
+create_monitor_set("LNFioc.req",300)
+
 ## Start any sequence programs
-#seq sncxxx,"user=marcoHost"
+
