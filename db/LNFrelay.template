@@ -1,0 +1,11 @@
+#Creates PV's for Controlling the relays
+record(bo, "$(device):put-On-Off-$(num)") {
+    field(OMSL, "supervisory")
+    field(PINI, "YES")
+    field(DESC, "$(desc):$(num)")
+    field(VAL,  "0")
+    field(ZNAM, "Off")    
+    field(ZSV, "MAJOR")
+    field(ONAM, "On")     
+    field(OUT,  "LNF:$(module):$(chan):OUTPUT PP")#Check if this is the correct output pv name
+}

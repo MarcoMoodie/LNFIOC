@@ -1,0 +1,43 @@
+## Load the master bus template file##
+file "../../db/modified/MASTER.template" {
+
+    pattern { SYS   DEVICE	   PORT	     SCAN	}
+            { LNF   MASTER	   MASTER0   "I/O Intr"	}
+}
+## Load the bus coupler template file###
+file "../../db/EK1100.template" {
+pattern 
+	 { SYS  DEVICE    PORT       SCAN       }
+	 { LNF  COUPLER   COUPLER.0  "I/O Intr"	}
+}
+## 8 Channel 12bit EL3208 *card 2* "For PT100 sensors" "Template must be made"
+file "../../db/EL3208.template" {
+pattern 
+	 { SYS  DEVICE    PORT       SCAN       }
+	 { LNF  PTM0      PTM.0  		 "I/O Intr"	}
+}
+## 8 Channel Relay Couple Module EL2008 *card 3* "Template must be made"
+file "../../db/EL2008.template" {
+pattern 
+	 { SYS  DEVICE    PORT       SCAN       }
+	 { LNF  VLVM0      VLVM.0  	 "Passive"	}
+}
+
+###################################################################
+#                         Relays Control			 			  #
+# 			Using the EL2008 Module couple with Relays            #
+###################################################################
+
+file db/LNFrelay.template {
+pattern 
+ { desc        device    module chan        softswitch 	num}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL1    0						1}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL2    0						2}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL3    0						3}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL4    0						4}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL5    0						5}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL6    0						6}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL7    0						7}
+ {"LNF relay" "LNFrel"  VLVM0  CHANNEL8    0						8}
+ ##you can add all additional relays and control modules in a simmilar fashion bellow this line
+}
