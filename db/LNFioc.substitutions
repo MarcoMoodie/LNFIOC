@@ -1,8 +1,8 @@
 ## Load the master bus template file##
 file "../../db/modified/MASTER.template" {
-
-    pattern { SYS   DEVICE	   PORT	     SCAN	}
-            { LNF   MASTER	   MASTER0   "I/O Intr"	}
+pattern
+	 { SYS   DEVICE	   PORT	     SCAN	}
+     { LNF   MASTER	   MASTER0   "I/O Intr"	}
 }
 ## Load the bus coupler template file###
 file "../../db/EK1100.template" {
@@ -40,4 +40,22 @@ pattern
  {"LNF relay" "LNFrel"  VLVM0  CHANNEL7    0						7}
  {"LNF relay" "LNFrel"  VLVM0  CHANNEL8    0						8}
  ##you can add all additional relays and control modules in a simmilar fashion bellow this line
+}
+
+###################################################################
+#                      Temperature readings			 			  #
+# 			Using the EL3208 Module With PT100 Sensors            #
+###################################################################
+file db/LN4adc.template {
+pattern
+ {desc     device  ioc        room  crate     module chan      hi hihi lo lolo units prec offset  scan}
+ {"DET 1"   LNFdet1  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL1  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 2"   LNFdet2  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL2  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 3"   LNFdet3  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL3  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 4"   LNFdet4  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL4  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 1"  	LNFpt1 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL5  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 2"  	LNFpt2 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL6  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 3"  	LNFpt3 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL7  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 4"  	LNFpt4 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL8  8   9   2   1   C     1    0	  "1 second" }
+ ##you can add all PT100 modules in a simmilar fashion bellow this line
 }

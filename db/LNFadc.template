@@ -1,0 +1,26 @@
+## Converts the Analog input from PT100s to Degrees C
+record(calc, "$(device):get-Conversion") {
+    field(SCAN, "$(scan)"
+    field(DESC, "$(desc)")
+    field(CALC, "((A/10)+B)")
+    field(INPA, "LNF:$(module):$(chan):RAW NPP")
+    field(INPB, "$(device):offset PP")
+    field(EGU, "$(units)")
+    field(LOLO,"$(lolo)")
+	field(LOW,"$(lo)")
+	field(HIGH,"$(hi)")
+	field(HIHI,"$(hihi)")
+	field(LLSV,"MAJOR")
+	field(LSV,"MINOR")
+	field(HSV,"MINOR")
+	field(HHSV,"MAJOR")
+}
+## Offset for ease of review of temps
+record(ao,"$(device):offset") {
+	field(DTYP,"Soft Channel")
+	field(VAL,"$(offset)")
+	field(PREC,"$(prec)")
+	field(PINI,"YES")
+	field(EGU,"$(units)")
+	info(autosaveFields_pass0, "VAL")
+}
