@@ -23,6 +23,13 @@ pattern
 	 { LNF  VLVM0      VLVM.0  	 "Passive"	}
 }
 
+## 8 Channel Relay Couple Module EL2008 *card 3* "Template must be made"
+file "../../db/EL6002.template" {
+pattern 
+	 { SYS  DEVICE    PORT       SCAN       }
+	 { LNF  SCLE0      SCLE.0  	 "I/O Intr"	}
+}
+
 ###################################################################
 #                         Relays Control			 			  #
 # 			Using the EL2008 Module couple with Relays            #
@@ -46,7 +53,7 @@ pattern
 #                      Temperature readings			 			  #
 # 			Using the EL3208 Module With PT100 Sensors            #
 ###################################################################
-file db/LN4adc.template {
+file db/LNFadc.template {
 pattern
  {desc     device  ioc        room  crate     module chan      hi hihi lo lolo units prec offset  scan}
  {"DET 1"   LNFdet1  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL1  8   9   2   1   C     1    0	  "1 second" }
@@ -58,4 +65,14 @@ pattern
  {"PT 3"  	LNFpt3 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL7  8   9   2   1   C     1    0	  "1 second" }
  {"PT 4"  	LNFpt4 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL8  8   9   2   1   C     1    0	  "1 second" }
  ##you can add all PT100 modules in a simmilar fashion bellow this line
+}
+
+###################################################################
+#                    LN2 Tank mass readings			 			  #
+# 		Using the EL6002 Module With XK3190-A12(E) scales  		  #
+###################################################################
+
+file db/LNFscale.template {
+
+
 }
