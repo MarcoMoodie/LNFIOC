@@ -30,5 +30,8 @@ EPICS_BASE=/epics/base
 # Set RULES here if you want to take build rules from somewhere
 # other than EPICS_BASE:
 #RULES=/path/to/epics/support/module/rules/x-y
-
+ECASYN=/epics/ethercat-4-3
+ASYN=/epics/support/asyn4-21
 AUTOSAVE=/epics/support/autosave-5-6-1
+SNCSEQ=/epics/support/seq-2-2-1
+STD=/epics/support/std-3-4

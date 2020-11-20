@@ -1,6 +1,7 @@
 # DO NOT EDIT: This file created by mkmf.pl,v 1.5 2002/03/25 21:33:24 jba Exp $ 
 
 ../O.Common/LNFioc.dbd : /epics/base/dbd/base.dbd
+../O.Common/LNFioc.dbd : /epics/ethercat-4-3/dbd/ecAsyn.dbd
 ../O.Common/LNFioc.dbd : /epics/support/autosave-5-6-1/dbd/asSupport.dbd
 ../O.Common/LNFioc.dbd : /epics/base/dbd/menuGlobal.dbd
 ../O.Common/LNFioc.dbd : /epics/base/dbd/menuConvert.dbd

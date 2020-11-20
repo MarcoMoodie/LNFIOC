@@ -3,11 +3,11 @@ TOP=..
 include $(TOP)/configure/CONFIG
 
 install:
-	$(ECASYN)/bin/linux-x86_64/slaveinfo -s slave_types.txt > fls_chain.xml
-	$(ECASYN)/etc/scripts/expandChain.py fls_chain.xml  > fls_scanner.xml
+	#$(ECASYN)/bin/linux-x86_64/slaveinfo -s > lnf_chain.xml
+	../../../etc/scripts/expandChain.py lnf_chain.xml  > lnf_scanner.xml
 
 clean:
-	-rm  fls_chain.xml fls_scanner.xml
+	-rm  lnf_chain.xml lnf_scanner.xml
 
 uninstall:
 

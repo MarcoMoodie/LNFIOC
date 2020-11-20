@@ -20,3 +20,4 @@ include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
 
+DB_INSTALLS += $(ASYN)/db/ecAsyn.db

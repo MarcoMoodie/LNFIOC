@@ -1,5 +1,5 @@
 ## Load the master bus template file##
-file "../../db/modified/MASTER.template" {
+file "../../db/MASTER.template" {
 pattern
 	 { SYS   DEVICE	   PORT	     SCAN	}
      { LNF   MASTER	   MASTER0   "I/O Intr"	}
@@ -14,20 +14,20 @@ pattern
 file "../../db/EL3208.template" {
 pattern 
 	 { SYS  DEVICE    PORT       SCAN       }
-	 { LNF  PTM0      PTM.0  		 "I/O Intr"	}
+	 { LNF  PTMFS0    PTM.0  		 "I/O Intr"	}
 }
 ## 8 Channel Relay Couple Module EL2008 *card 3* "Template must be made"
 file "../../db/EL2008.template" {
 pattern 
 	 { SYS  DEVICE    PORT       SCAN       }
-	 { LNF  VLVM0      VLVM.0  	 "Passive"	}
+	 { LNF  VLVMFS0   VLVM.0  	 "Passive"	}
 }
 
 ## 8 Channel Relay Couple Module EL2008 *card 3* "Template must be made"
 file "../../db/EL6002.template" {
 pattern 
 	 { SYS  DEVICE    PORT       SCAN       }
-	 { LNF  SCLE0      SCLE.0  	 "I/O Intr"	}
+	 { LNF  SCLEFS0   SCLE.0  	 "I/O Intr"	}
 }
 
 ###################################################################
@@ -38,14 +38,14 @@ pattern
 file db/LNFrelay.template {
 pattern 
  { desc        device    module chan        softswitch 	num}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL1    0						1}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL2    0						2}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL3    0						3}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL4    0						4}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL5    0						5}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL6    0						6}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL7    0						7}
- {"LNF relay" "LNFrel"  VLVM0  CHANNEL8    0						8}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL1    0						1}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL2    0						2}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL3    0						3}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL4    0						4}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL5    0						5}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL6    0						6}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL7    0						7}
+ {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL8    0						8}
  ##you can add all additional relays and control modules in a simmilar fashion bellow this line
 }
 
@@ -56,14 +56,14 @@ pattern
 file db/LNFadc.template {
 pattern
  {desc     device  ioc        room  crate     module chan      hi hihi lo lolo units prec offset  scan}
- {"DET 1"   LNFdet1  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL1  8   9   2   1   C     1    0	  "1 second" }
- {"DET 2"   LNFdet2  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL2  8   9   2   1   C     1    0	  "1 second" }
- {"DET 3"   LNFdet3  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL3  8   9   2   1   C     1    0	  "1 second" }
- {"DET 4"   LNFdet4  "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL4  8   9   2   1   C     1    0	  "1 second" }
- {"PT 1"  	LNFpt1 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL5  8   9   2   1   C     1    0	  "1 second" }
- {"PT 2"  	LNFpt2 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL6  8   9   2   1   C     1    0	  "1 second" }
- {"PT 3"  	LNFpt3 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL7  8   9   2   1   C     1    0	  "1 second" }
- {"PT 4"  	LNFpt4 	 "ioclnf"  "mrd"  lncrate0  PTM0   CHANNEL8  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 1"   LNFdet1  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL1  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 2"   LNFdet2  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL2  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 3"   LNFdet3  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL3  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 4"   LNFdet4  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL4  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 1"  	LNFpt1 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL5  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 2"  	LNFpt2 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL6  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 3"  	LNFpt3 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL7  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 4"  	LNFpt4 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL8  8   9   2   1   C     1    0	  "1 second" }
  ##you can add all PT100 modules in a simmilar fashion bellow this line
 }
 
@@ -72,7 +72,3 @@ pattern
 # 		Using the EL6002 Module With XK3190-A12(E) scales  		  #
 ###################################################################
 
-file db/LNFscale.template {
-
-
-}

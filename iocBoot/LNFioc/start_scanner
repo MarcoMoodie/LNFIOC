@@ -1,1 +1,1 @@
-/epics/ethercat-4-3/bin/linux-x86_64/scanner -m 0 -q /epics/ethercat-4-3/iocs/LNFIOC/etc/fls_scanner.xml "/tmp/scan1"
+/epics/ethercat-4-3/bin/linux-x86_64/scanner -m 0 -q /epics/ethercat-4-3/iocs/LNFIOC/etc/lnf_scanner.xml "/tmp/scan1"

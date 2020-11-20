@@ -1,0 +1,247 @@
+<scanner>
+<devices>
+  <!-- parsed from file /epics/ethercat-4-3/etc/xml/Beckhoff EL32xx.xml -->
+  <device name="EL3208" vendor="0x00000002" product="0x0c883052" revision="0x00120000">
+    <sync index="0"  dir="MBoxOut"  watchdog="0">
+    </sync>
+    <sync index="1"  dir="MBoxIn"  watchdog="0">
+    </sync>
+    <sync index="2"  dir="Outputs"  watchdog="0">
+    </sync>
+    <sync index="3"  dir="Inputs"  watchdog="0">
+      <pdo name="RTD Inputs Channel 1" index="0x00001a00">
+        <entry name="Status__Underrange" index="0x00006000" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006000" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12070" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006000" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12071" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006000" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006000" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006000" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+      <pdo name="RTD Inputs Channel 2" index="0x00001a01">
+        <entry name="Status__Underrange" index="0x00006010" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006010" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12072" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006010" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12073" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006010" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006010" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006010" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+      <pdo name="RTD Inputs Channel 3" index="0x00001a02">
+        <entry name="Status__Underrange" index="0x00006020" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006020" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12074" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006020" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12075" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006020" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006020" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006020" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+      <pdo name="RTD Inputs Channel 4" index="0x00001a03">
+        <entry name="Status__Underrange" index="0x00006030" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006030" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12076" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006030" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12077" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006030" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006030" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006030" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+      <pdo name="RTD Inputs Channel 5" index="0x00001a04">
+        <entry name="Status__Underrange" index="0x00006040" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006040" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12078" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006040" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12079" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006040" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006040" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006040" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+      <pdo name="RTD Inputs Channel 6" index="0x00001a05">
+        <entry name="Status__Underrange" index="0x00006050" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006050" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12080" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006050" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12081" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006050" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006050" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006050" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+      <pdo name="RTD Inputs Channel 7" index="0x00001a06">
+        <entry name="Status__Underrange" index="0x00006060" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006060" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12082" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006060" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12083" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006060" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006060" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006060" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+      <pdo name="RTD Inputs Channel 8" index="0x00001a07">
+        <entry name="Status__Underrange" index="0x00006070" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Overrange" index="0x00006070" subindex="0x00000002" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12084" index="0x00000000" subindex="0x00000000" bit_length="4" datatype="BOOL" oversample="0" />
+        <entry name="Status__Error" index="0x00006070" subindex="0x00000007" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__Gap12085" index="0x00000000" subindex="0x00000000" bit_length="7" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO State" index="0x00006070" subindex="0x0000000f" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Status__TxPDO Toggle" index="0x00006070" subindex="0x00000010" bit_length="1" datatype="BOOL" oversample="0" />
+        <entry name="Value" index="0x00006070" subindex="0x00000011" bit_length="16" datatype="INT" oversample="0" />
+      </pdo>
+    </sync>
+  </device>
+  <!-- parsed from file /epics/ethercat-4-3/etc/xml/Beckhoff EL6xxx.xml -->
+  <device name="EL6002" vendor="0x00000002" product="0x17723052" revision="0x00130000">
+    <sync index="0"  dir="MBoxOut"  watchdog="0">
+    </sync>
+    <sync index="1"  dir="MBoxIn"  watchdog="0">
+    </sync>
+    <sync index="2"  dir="Outputs"  watchdog="0">
+      <pdo name="COM RxPDO-Map Outputs Channel 1" index="0x00001604">
+        <entry name="Ctrl" index="0x00007001" subindex="0x00000001" bit_length="16" datatype="UINT" oversample="0" />
+        <entry name="Data Out 0" index="0x00007000" subindex="0x00000011" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 1" index="0x00007000" subindex="0x00000012" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 2" index="0x00007000" subindex="0x00000013" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 3" index="0x00007000" subindex="0x00000014" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 4" index="0x00007000" subindex="0x00000015" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 5" index="0x00007000" subindex="0x00000016" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 6" index="0x00007000" subindex="0x00000017" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 7" index="0x00007000" subindex="0x00000018" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 8" index="0x00007000" subindex="0x00000019" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 9" index="0x00007000" subindex="0x0000001a" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 10" index="0x00007000" subindex="0x0000001b" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 11" index="0x00007000" subindex="0x0000001c" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 12" index="0x00007000" subindex="0x0000001d" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 13" index="0x00007000" subindex="0x0000001e" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 14" index="0x00007000" subindex="0x0000001f" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 15" index="0x00007000" subindex="0x00000020" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 16" index="0x00007000" subindex="0x00000021" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 17" index="0x00007000" subindex="0x00000022" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 18" index="0x00007000" subindex="0x00000023" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 19" index="0x00007000" subindex="0x00000024" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 20" index="0x00007000" subindex="0x00000025" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 21" index="0x00007000" subindex="0x00000026" bit_length="8" datatype="USINT" oversample="0" />
+      </pdo>
+      <pdo name="COM RxPDO-Map Outputs Channel 2" index="0x00001605">
+        <entry name="Ctrl" index="0x00007011" subindex="0x00000001" bit_length="16" datatype="UINT" oversample="0" />
+        <entry name="Data Out 0" index="0x00007010" subindex="0x00000011" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 1" index="0x00007010" subindex="0x00000012" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 2" index="0x00007010" subindex="0x00000013" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 3" index="0x00007010" subindex="0x00000014" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 4" index="0x00007010" subindex="0x00000015" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 5" index="0x00007010" subindex="0x00000016" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 6" index="0x00007010" subindex="0x00000017" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 7" index="0x00007010" subindex="0x00000018" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 8" index="0x00007010" subindex="0x00000019" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 9" index="0x00007010" subindex="0x0000001a" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 10" index="0x00007010" subindex="0x0000001b" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 11" index="0x00007010" subindex="0x0000001c" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 12" index="0x00007010" subindex="0x0000001d" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 13" index="0x00007010" subindex="0x0000001e" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 14" index="0x00007010" subindex="0x0000001f" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 15" index="0x00007010" subindex="0x00000020" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 16" index="0x00007010" subindex="0x00000021" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 17" index="0x00007010" subindex="0x00000022" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 18" index="0x00007010" subindex="0x00000023" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 19" index="0x00007010" subindex="0x00000024" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 20" index="0x00007010" subindex="0x00000025" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data Out 21" index="0x00007010" subindex="0x00000026" bit_length="8" datatype="USINT" oversample="0" />
+      </pdo>
+    </sync>
+    <sync index="3"  dir="Inputs"  watchdog="0">
+      <pdo name="COM TxPDO-Map Inputs Channel 1" index="0x00001a04">
+        <entry name="Status" index="0x00006001" subindex="0x00000001" bit_length="16" datatype="UINT" oversample="0" />
+        <entry name="Data In 0" index="0x00006000" subindex="0x00000011" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 1" index="0x00006000" subindex="0x00000012" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 2" index="0x00006000" subindex="0x00000013" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 3" index="0x00006000" subindex="0x00000014" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 4" index="0x00006000" subindex="0x00000015" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 5" index="0x00006000" subindex="0x00000016" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 6" index="0x00006000" subindex="0x00000017" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 7" index="0x00006000" subindex="0x00000018" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 8" index="0x00006000" subindex="0x00000019" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 9" index="0x00006000" subindex="0x0000001a" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 10" index="0x00006000" subindex="0x0000001b" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 11" index="0x00006000" subindex="0x0000001c" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 12" index="0x00006000" subindex="0x0000001d" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 13" index="0x00006000" subindex="0x0000001e" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 14" index="0x00006000" subindex="0x0000001f" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 15" index="0x00006000" subindex="0x00000020" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 16" index="0x00006000" subindex="0x00000021" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 17" index="0x00006000" subindex="0x00000022" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 18" index="0x00006000" subindex="0x00000023" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 19" index="0x00006000" subindex="0x00000024" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 20" index="0x00006000" subindex="0x00000025" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 21" index="0x00006000" subindex="0x00000026" bit_length="8" datatype="USINT" oversample="0" />
+      </pdo>
+      <pdo name="COM TxPDO-Map Inputs Channel 2" index="0x00001a05">
+        <entry name="Status" index="0x00006011" subindex="0x00000001" bit_length="16" datatype="UINT" oversample="0" />
+        <entry name="Data In 0" index="0x00006010" subindex="0x00000011" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 1" index="0x00006010" subindex="0x00000012" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 2" index="0x00006010" subindex="0x00000013" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 3" index="0x00006010" subindex="0x00000014" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 4" index="0x00006010" subindex="0x00000015" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 5" index="0x00006010" subindex="0x00000016" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 6" index="0x00006010" subindex="0x00000017" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 7" index="0x00006010" subindex="0x00000018" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 8" index="0x00006010" subindex="0x00000019" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 9" index="0x00006010" subindex="0x0000001a" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 10" index="0x00006010" subindex="0x0000001b" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 11" index="0x00006010" subindex="0x0000001c" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 12" index="0x00006010" subindex="0x0000001d" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 13" index="0x00006010" subindex="0x0000001e" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 14" index="0x00006010" subindex="0x0000001f" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 15" index="0x00006010" subindex="0x00000020" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 16" index="0x00006010" subindex="0x00000021" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 17" index="0x00006010" subindex="0x00000022" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 18" index="0x00006010" subindex="0x00000023" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 19" index="0x00006010" subindex="0x00000024" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 20" index="0x00006010" subindex="0x00000025" bit_length="8" datatype="USINT" oversample="0" />
+        <entry name="Data In 21" index="0x00006010" subindex="0x00000026" bit_length="8" datatype="USINT" oversample="0" />
+      </pdo>
+    </sync>
+  </device>
+  <!-- parsed from file /epics/ethercat-4-3/etc/xml/Beckhoff EK11xx.xml -->
+  <device name="EK1100" vendor="0x00000002" product="0x044c2c52" revision="0x00120000">
+  </device>
+  <!-- parsed from file /epics/ethercat-4-3/etc/xml/Beckhoff EL2xxx.xml -->
+  <device name="EL2008" vendor="0x00000002" product="0x07d83052" revision="0x00120000">
+    <sync index="0"  dir="Outputs"  watchdog="0">
+      <pdo name="Channel 1" index="0x00001600">
+        <entry name="Output" index="0x00007000" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+      <pdo name="Channel 2" index="0x00001601">
+        <entry name="Output" index="0x00007010" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+      <pdo name="Channel 3" index="0x00001602">
+        <entry name="Output" index="0x00007020" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+      <pdo name="Channel 4" index="0x00001603">
+        <entry name="Output" index="0x00007030" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+      <pdo name="Channel 5" index="0x00001604">
+        <entry name="Output" index="0x00007040" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+      <pdo name="Channel 6" index="0x00001605">
+        <entry name="Output" index="0x00007050" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+      <pdo name="Channel 7" index="0x00001606">
+        <entry name="Output" index="0x00007060" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+      <pdo name="Channel 8" index="0x00001607">
+        <entry name="Output" index="0x00007070" subindex="0x00000001" bit_length="1" datatype="BOOL" oversample="0" />
+      </pdo>
+    </sync>
+  </device>
+</devices>
+<chain>
+<device type_name="EK1100" revision="0x00120000" position="0" name="COUPLER.0" />
+<device type_name="EL3208" revision="0x00120000" position="1" name="PTM.0" />
+<device type_name="EL2008" revision="0x00120000" position="2" name="VLVM.0" />
+<device type_name="EL6002" revision="0x00130000" position="3" name="SCLE.0" />
+</chain>
+<sdorequests>
+</sdorequests>
+</scanner>
+

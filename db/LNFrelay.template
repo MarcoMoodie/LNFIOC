@@ -7,5 +7,5 @@ record(bo, "$(device):put-On-Off-$(num)") {
     field(ZNAM, "Off")    
     field(ZSV, "MAJOR")
     field(ONAM, "On")     
-    field(OUT,  "LNF:$(module):$(chan):OUTPUT PP")#Check if this is the correct output pv name
+    field(OUT,  "$(module):$(chan):OUTPUT PP")#Check if this is the correct output pv name
 }

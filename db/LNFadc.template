@@ -1,6 +1,6 @@
 ## Converts the Analog input from PT100s to Degrees C
 record(calc, "$(device):get-Conversion") {
-    field(SCAN, "$(scan)"
+    field(SCAN, "$(scan)")
     field(DESC, "$(desc)")
     field(CALC, "((A/10)+B)")
     field(INPA, "LNF:$(module):$(chan):RAW NPP")

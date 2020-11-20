@@ -10,10 +10,10 @@ include $(TOP)/configure/CONFIG
 
 PROD_IOC = LNFioc
 # LNFioc.dbd will be created and installed
-DBD += LNFioc.dbd
+DBD += LNFioc.dbd 
 
 # LNFioc.dbd will be made up from these files:
-LNFioc_DBD += base.dbd
+LNFioc_DBD += base.dbd ecAsyn.dbd asSupport.dbd
 
 # Include dbd files from all support applications:
 #LNFioc_DBD += xxx.dbd
@@ -39,5 +39,5 @@ LNFioc_LIBS += $(EPICS_BASE_IOC_LIBS)
 include $(TOP)/configure/RULES
 #----------------------------------------
 #  ADD RULES AFTER THIS LINE
-
+LNFioc_LIBS += asyn ecAsyn scannerlib rtutils std
 LNFioc_LIBS += autosave
