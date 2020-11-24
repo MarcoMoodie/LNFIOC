@@ -4224,6 +4224,7 @@ $(pv_value)</tooltip>
         <scriptName>Get_Current_Time</scriptName>
         <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
 
+
 //////////////////////////////////////////////
 // This script is ment to be skimmed a lot 
 // H, M, S will be worked out under EPICS in the ioc machine
@@ -4239,6 +4240,7 @@ pvs[0].setValue(Clock);
 pvs[1].setValue( H);
 pvs[2].setValue( M);
 pvs[3].setValue( S);
+sleep(1000);
 
 
 
