@@ -56,14 +56,14 @@ pattern
 file db/LNFadc.template {
 pattern
  {desc     device  ioc        room  crate     module chan      hi hihi lo lolo units prec offset  scan}
- {"DET 1"   LNFdet1  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL1  8   9   2   1   C     1    0	  "1 second" }
- {"DET 2"   LNFdet2  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL2  8   9   2   1   C     1    0	  "1 second" }
- {"DET 3"   LNFdet3  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL3  8   9   2   1   C     1    0	  "1 second" }
- {"DET 4"   LNFdet4  "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL4  8   9   2   1   C     1    0	  "1 second" }
- {"PT 1"  	LNFpt1 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL5  8   9   2   1   C     1    0	  "1 second" }
- {"PT 2"  	LNFpt2 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL6  8   9   2   1   C     1    0	  "1 second" }
- {"PT 3"  	LNFpt3 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL7  8   9   2   1   C     1    0	  "1 second" }
- {"PT 4"  	LNFpt4 	 "ioclnf"  "NULL"  lncrate0  PTMFS0   CHANNEL8  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 1"   LNFdet1  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL1  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 2"   LNFdet2  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL2  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 3"   LNFdet3  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL3  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 4"   LNFdet4  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL4  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 1"  	LNFpt1 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL5  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 2"  	LNFpt2 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL6  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 3"  	LNFpt3 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL7  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 4"  	LNFpt4 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL8  8   9   2   1   C     1    0	  "1 second" }
  ##you can add all PT100 modules in a simmilar fashion bellow this line
 }
 
@@ -72,3 +72,13 @@ pattern
 # 		Using the EL6002 Module With XK3190-A12(E) scales  		  #
 ###################################################################
 
+###################################################################
+#                       Soft Channel status			 			  #
+# 			Using soft channels to collect status info            #
+###################################################################
+
+file db/LNFioc.template{
+pattern
+{desc 			device 			ioc 		room 	pvMin pvMax hi hihi  lo lolo units prec offset scan}
+{"LNFS Status" 	"LNFSstatus"	"ioclnfs"	"NULL"	0	  1     8  9     2  1    C     6	0.1	   "1 second"}
+}

@@ -1,0 +1,384 @@
+record(stringin,"$(device):Clock") 
+{ 
+ field(DESC,"Clock")
+ field(DTYP,"Soft Channel") 
+ field(PINI,"YES")
+}
+record(ao,"$(device):Hour"){
+ field(DESC, "Hour")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Minute"){
+ field(DESC, "Minute")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Second"){
+ field(DESC, "Second")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Time"){
+ field(DESC, "Time-of-the-day-in-seconds")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+record(ao, "$(device):TimeStamp") {
+    field(DESC, "Timestamp-01-01-1970")
+    field(DTYP, "Soft Channel")
+    field(PINI, "YES")
+}
+record(ao,"$(device):RunTime"){
+ field(DESC, "Time-busy-filling")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+
+record(ao,"$(device):Tank1"){
+ field(DESC, "0-not-in-use, 1-in-use")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMax)") 
+ field(PINI,"YES") 
+}
+record(ao,"$(device):TareKg-1"){
+ field(DESC, "Tare-in-Kg-Tank1")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):TareLbs-1"){
+ field(DESC, "Tare-in-Lbs-Tank1")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):WT-1"){
+ field(DESC, "Mass-Tank1")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):FillTimeHr"){
+ field(DESC, "Start-filling-Minutes")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):FillTimeMin"){
+ field(DESC, "Start-filling-Minutes")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):Automatic"){
+ field(DESC, "0-stopped, 1-started")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):complete"){
+ field(DESC, "0-No, 1-Yes, >1-Yes-but")##############################################
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+}
+record(ao,"$(device):start"){
+ field(DESC, "0-stopped, 1-started")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+}
+record(ao,"$(device):init"){
+ field(DESC, "1-init-autofill-cycle")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+}
+record(ao,"$(device):detcounter"){
+ field(DESC, "nb-of-detectors-being-filled")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):nbdet"){
+ field(DESC, "detectors-to-fill-at-a-time")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+
+record(stringin,"$(device):ClockOut-1")
+{
+ field(DESC, "ClockOut-1")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+record(stringin,"$(device):ClockOut-2")
+{
+ field(DESC, "ClockOut-2")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):ClockOut-3")
+{
+ field(DESC, "ClockOut-3")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):ClockOut-4")
+{
+ field(DESC, "ClockOut-4")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+
+record(ao,"$(device):Fill-1"){
+ field(DESC, "0-do-not-fill, 1-fill")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):Fill-2"){
+ field(DESC, "0-do-not-fill, 1-fill")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):Fill-3"){
+ field(DESC, "0-do-not-fill, 1-fill")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+record(ao,"$(device):Fill-4"){
+ field(DESC, "0-do-not-fill, 1-fill")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL")
+}
+
+record(ao,"$(device):cmpt-1"){
+ field(DESC, "0-incomplete, 1-complete")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):cmpt-2"){
+ field(DESC, "0-incomplete, 1-complete")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+record(ao,"$(device):cmpt-3"){
+ field(DESC, "0-incomplete, 1-complete")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(ao,"$(device):cmpt-4"){
+ field(DESC, "0-incomplete, 1-complete")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+}
+record(ao,"$(device):cmpt-5"){
+ field(DESC, "0-incomplete, 1-complete")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+}
+record(ao,"$(device):cmpt-6"){
+ field(DESC, "0-incomplete, 1-complete")
+ field(DTYP, "Soft Channel")
+ field(VAL, "$(pvMin)") 
+ field(PINI,"YES") 
+}
+
+record(ao,"$(device):Times-1"){
+ field(DESC, "Number-of-fills-per-day")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+record(ao,"$(device):Times-2"){
+ field(DESC, "Number-of-fills-per-day")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+record(ao,"$(device):Times-3"){
+ field(DESC, "Number-of-fills-per-day")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Times-4"){
+ field(DESC, "Number-of-fills-per-day")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES")
+ info(autosaveFields_pass0, "VAL") 
+}
+
+record(ao,"$(device):Check-1"){
+ field(DESC, "TimeOut-Check")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Check-2"){
+ field(DESC, "TimeOut-Check")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Check-3"){
+ field(DESC, "TimeOut-Check")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Check-4"){
+ field(DESC, "TimeOut-Check")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Check-5"){
+ field(DESC, "TimeOut-Check")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Check-6"){
+ field(DESC, "TimeOut-Check")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+
+record(ao,"$(device):Duration-1"){
+ field(DESC, "Time-spent-filling-1")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Duration-2"){
+ field(DESC, "Time-spent-filling-2")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Duration-3"){
+ field(DESC, "Time-spent-filling-3")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Duration-4"){
+ field(DESC, "Time-spent-filling-4")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+record(ao,"$(device):Duration-5"){
+ field(DESC, "Time-spent-filling-5")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+}
+
+#
+#record(ao,"$(device):outlet-1"){
+# field(DESC, "Smoothed-pt100-outlet-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#record(ao,"$(device):outlet-2"){
+# field(DESC, "Smoothed-pt100-outlet-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#record(ao,"$(device):outlet-3"){
+# field(DESC, "Smoothed-pt100-outlet-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#record(ao,"$(device):outlet-4"){
+# field(DESC, "Smoothed-pt100-outlet-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#record(ao,"$(device):clover-1"){
+# field(DESC, "Smoothed-pt100-clover-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#record(ao,"$(device):clover-2"){
+# field(DESC, "Smoothed-pt100-clover-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#record(ao,"$(device):clover-3"){
+# field(DESC, "Smoothed-pt100-clover-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#record(ao,"$(device):clover-4"){
+# field(DESC, "Smoothed-pt100-clover-value")
+# field(DTYP, "Soft Channel")
+# field(PINI,"YES") 
+#}
+#
+
+#Do we Need Email Support ???
+
+##############################
+## Detector serial numbers
+##############################
+record(stringin,"$(device):SN-1"){
+ field(DESC, "Serial-number")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):SN-2"){
+ field(DESC, "Serial-number")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):SN-3"){
+ field(DESC, "Serial-number")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):SN-4"){
+ field(DESC, "Serial-number")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+
+################################
+## detector label/name
+################################
+
+record(stringin,"$(device):Label-1"){
+ field(DESC, "Label/detector-name")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):Label-2"){
+ field(DESC, "Label/detector-name")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):Label-3"){
+ field(DESC, "Label/detector-name")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
+record(stringin,"$(device):Label-4"){
+ field(DESC, "Label/detector-name")
+ field(DTYP, "Soft Channel")
+ field(PINI,"YES") 
+ info(autosaveFields_pass0, "VAL")
+}
