@@ -1,30 +1,30 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 201124-155406
-LNFSstatus:Time 0
-LNFSstatus:TareKg-1 0
-LNFSstatus:TareLbs-1 0
-LNFSstatus:FillTimeHr 10
-LNFSstatus:FillTimeMin 45
-LNFSstatus:Automatic 0
-LNFSstatus:ClockOut-1 
-LNFSstatus:ClockOut-2 
-LNFSstatus:ClockOut-3 
-LNFSstatus:ClockOut-4 
-LNFSstatus:Fill-1 1
-LNFSstatus:Fill-2 0
-LNFSstatus:Fill-3 1
-LNFSstatus:Fill-4 0
-LNFSstatus:cmpt-1 0
-LNFSstatus:cmpt-2 0
-LNFSstatus:cmpt-3 0
-LNFSstatus:cmpt-4 0
-LNFSstatus:cmpt-5 0
-LNFSstatus:cmpt-6 0
-LNFSstatus:Label-1 
-LNFSstatus:Label-2 
-LNFSstatus:Label-3 
-LNFSstatus:Label-4 
-LNFSstatus:SN-1 
-LNFSstatus:SN-2 
-LNFSstatus:SN-3 
-LNFSstatus:SN-4 
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 201126-161416
+LNPstatus:Time 0
+LNPstatus:TareKg-1 60
+LNPstatus:TareLbs-1 50
+LNPstatus:FillTimeHr 10
+LNPstatus:FillTimeMin 45
+LNPstatus:Automatic 0
+LNPstatus:ClockOut-1 
+LNPstatus:ClockOut-2 
+LNPstatus:ClockOut-3 
+LNPstatus:ClockOut-4 
+LNPstatus:Fill-1 1
+LNPstatus:Fill-2 0
+LNPstatus:Fill-3 1
+LNPstatus:Fill-4 0
+LNPstatus:cmpt-1 0
+LNPstatus:cmpt-2 0
+LNPstatus:cmpt-3 0
+LNPstatus:cmpt-4 0
+LNPstatus:cmpt-5 0
+LNPstatus:cmpt-6 0
+LNPstatus:Label-1 
+LNPstatus:Label-2 
+LNPstatus:Label-3 
+LNPstatus:Label-4 
+LNPstatus:SN-1 
+LNPstatus:SN-2 
+LNPstatus:SN-3 
+LNPstatus:SN-4 
 <END>

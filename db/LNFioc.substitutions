@@ -2,32 +2,32 @@
 file "../../db/MASTER.template" {
 pattern
 	 { SYS   DEVICE	   PORT	     SCAN	}
-     { LNF   MASTER	   MASTER0   "I/O Intr"	}
+     { LNFP   MASTER	   MASTER0   "I/O Intr"	}
 }
 ## Load the bus coupler template file###
 file "../../db/EK1100.template" {
 pattern 
 	 { SYS  DEVICE    PORT       SCAN       }
-	 { LNF  COUPLER   COUPLER.0  "I/O Intr"	}
+	 { LNFP  COUPLER   COUPLER.0  "I/O Intr"	}
 }
 ## 8 Channel 12bit EL3208 *card 2* "For PT100 sensors" "Template must be made"
 file "../../db/EL3208.template" {
 pattern 
 	 { SYS  DEVICE    PORT       SCAN       }
-	 { LNF  PTMFS0    PTM.0  		 "I/O Intr"	}
+	 { LNFP  PTMP0    PTM.0  		 "I/O Intr"	}
 }
 ## 8 Channel Relay Couple Module EL2008 *card 3* "Template must be made"
 file "../../db/EL2008.template" {
 pattern 
 	 { SYS  DEVICE    PORT       SCAN       }
-	 { LNF  VLVMFS0   VLVM.0  	 "Passive"	}
+	 { LNFP  VLVMP0   VLVM.0  	 "Passive"	}
 }
 
 ## 8 Channel Relay Couple Module EL2008 *card 3* "Template must be made"
 file "../../db/EL6002.template" {
 pattern 
 	 { SYS  DEVICE    PORT       SCAN       }
-	 { LNF  SCLEFS0   SCLE.0  	 "I/O Intr"	}
+	 { LNFP  SCLEP0   SCLE.0  	 "I/O Intr"	}
 }
 
 ###################################################################
@@ -37,16 +37,18 @@ pattern
 
 file db/LNFrelay.template {
 pattern 
- { desc        device    module chan        softswitch 	num}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL1    0						1}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL2    0						2}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL3    0						3}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL4    0						4}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL5    0						5}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL6    0						6}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL7    0						7}
- {"LNF relay" "LNFSrel"  VLVMFS0  CHANNEL8    0						8}
+ { desc        device    module chan         	num}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL1		1}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL2		2}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL3		3}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL4		4}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL5		5}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL6		6}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL7		7}
+ {"LNP relay" "LNPrel"  VLVMP0  CHANNEL8		8}
  ##you can add all additional relays and control modules in a simmilar fashion bellow this line
+ #{"LNP relay" "LNPrel"  VLVMP1  CHANNEL1    0						9}
+ #{"LNP relay" "LNPrel"  VLVMP1  CHANNEL2    0						10}
 }
 
 ###################################################################
@@ -55,16 +57,19 @@ pattern
 ###################################################################
 file db/LNFadc.template {
 pattern
- {desc     device  ioc        room  crate     module chan      hi hihi lo lolo units prec offset  scan}
- {"DET 1"   LNFdet1  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL1  8   9   2   1   C     1    0	  "1 second" }
- {"DET 2"   LNFdet2  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL2  8   9   2   1   C     1    0	  "1 second" }
- {"DET 3"   LNFdet3  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL3  8   9   2   1   C     1    0	  "1 second" }
- {"DET 4"   LNFdet4  "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL4  8   9   2   1   C     1    0	  "1 second" }
- {"PT 1"  	LNFpt1 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL5  8   9   2   1   C     1    0	  "1 second" }
- {"PT 2"  	LNFpt2 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL6  8   9   2   1   C     1    0	  "1 second" }
- {"PT 3"  	LNFpt3 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL7  8   9   2   1   C     1    0	  "1 second" }
- {"PT 4"  	LNFpt4 	 "ioclnfs"  "NULL"  lncrate0  PTMFS0   CHANNEL8  8   9   2   1   C     1    0	  "1 second" }
+ {desc      device   ioc             module  chan    hi hihi lo lolo units prec offset  scan}
+ {"DET 1"   LNPdet1  "LNPortable"    PTMP0   INPUT1  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 2"   LNPdet2  "LNPortable"    PTMP0   INPUT2  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 3"   LNPdet3  "LNPortable"    PTMP0   INPUT3  8   9   2   1   C     1    0	  "1 second" }
+ {"DET 4"   LNPdet4  "LNPortable"    PTMP0   INPUT4  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 1"  	LNPpt1 	 "LNPortable"    PTMP0   INPUT5  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 2"  	LNPpt2 	 "LNPortable"    PTMP0   INPUT6  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 3"  	LNPpt3 	 "LNPortable"    PTMP0   INPUT7  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 4"  	LNPpt4 	 "LNPortable"    PTMP0   INPUT8  8   9   2   1   C     1    0	  "1 second" }
  ##you can add all PT100 modules in a simmilar fashion bellow this line
+ #add 2 more PT modules for tank and overflow temp 
+ #{"PT 5"  	LNPpt5 	 "LNPortable"  "NULL"  lncrate0  PTMP1   INPUT1  8   9   2   1   C     1    0	  "1 second" }
+ #{"PT 6"  	LNPpt6 	 "LNPortable"  "NULL"  lncrate0  PTMP1   INPUT2  8   9   2   1   C     1    0	  "1 second" }
 }
 
 ###################################################################
@@ -80,5 +85,5 @@ pattern
 file db/LNFioc.template{
 pattern
 {desc 			device 			ioc 		room 	pvMin pvMax hi hihi  lo lolo units prec offset scan}
-{"LNFS Status" 	"LNFSstatus"	"ioclnfs"	"NULL"	0	  1     8  9     2  1    C     6	0.1	   "1 second"}
+{"LNFP Status" 	"LNPstatus"	"LNPortable"	"NULL"	0	  1     8  9     2  1    C     6	0.1	   "1 second"}
 }

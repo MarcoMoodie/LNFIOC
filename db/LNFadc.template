@@ -3,7 +3,7 @@ record(calc, "$(device):get-Conversion") {
     field(SCAN, "$(scan)")
     field(DESC, "$(desc)")
     field(CALC, "((A/10)+B)")
-    field(INPA, "LNF:$(module):$(chan):RAW NPP")
+    field(INPA, "$(module):$(chan):VALUE NPP")
     field(INPB, "$(device):offset PP")
     field(EGU, "$(units)")
     field(LOLO,"$(lolo)")
