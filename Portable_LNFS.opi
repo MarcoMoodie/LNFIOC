@@ -63,7 +63,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Fill-4</pv_name>
+    <pv_name>LNPstatus:Fill-4</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -123,7 +123,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Fill-3</pv_name>
+    <pv_name>LNPstatus:Fill-3</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -183,7 +183,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Fill-2</pv_name>
+    <pv_name>LNPstatus:Fill-2</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -243,7 +243,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Fill-1</pv_name>
+    <pv_name>LNPstatus:Fill-1</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -299,7 +299,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPpt1:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -351,7 +351,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPpt2:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -403,7 +403,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPpt3:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -455,7 +455,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPpt4:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -507,7 +507,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPdet1:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -559,7 +559,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPdet2:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -611,7 +611,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPdet3:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -663,7 +663,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPdet4:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -715,7 +715,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPpt6:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -767,7 +767,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPpt5:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -817,7 +817,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:cmpt-1</pv_name>
+    <pv_name>LNPstatus:cmpt-1</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -864,7 +864,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:cmpt-2</pv_name>
+    <pv_name>LNPstatus:cmpt-2</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -911,7 +911,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:cmpt-3</pv_name>
+    <pv_name>LNPstatus:cmpt-3</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -958,7 +958,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:cmpt-4</pv_name>
+    <pv_name>LNPstatus:cmpt-4</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -991,7 +991,7 @@ $(pv_value)</tooltip>
     <height>26</height>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Check-1</pv_name>
+    <pv_name>LNPstatus:Check-1</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -1045,7 +1045,7 @@ $(pv_value)</tooltip>
     <height>26</height>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Check-2</pv_name>
+    <pv_name>LNPstatus:Check-2</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -1099,7 +1099,7 @@ $(pv_value)</tooltip>
     <height>26</height>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Check-3</pv_name>
+    <pv_name>LNPstatus:Check-3</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -1153,7 +1153,7 @@ $(pv_value)</tooltip>
     <height>26</height>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Check-4</pv_name>
+    <pv_name>LNPstatus:Check-4</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -1212,7 +1212,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Times-1</pv_name>
+    <pv_name>LNPstatus:Times-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1269,7 +1269,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Times-2</pv_name>
+    <pv_name>LNPstatus:Times-2</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1326,7 +1326,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Times-3</pv_name>
+    <pv_name>LNPstatus:Times-3</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1383,7 +1383,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Times-4</pv_name>
+    <pv_name>LNPstatus:Times-4</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1440,7 +1440,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:ClockOut-1</pv_name>
+    <pv_name>LNPstatus:ClockOut-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1470,7 +1470,7 @@ $(pv_value)</tooltip>
       <color name="WritePV_Background" red="128" green="255" blue="255" />
     </background_color>
     <width>228</width>
-    <x>822</x>
+    <x>828</x>
     <y>300</y>
     <maximum>1.7976931348623157E308</maximum>
     <foreground_color>
@@ -1497,7 +1497,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:ClockOut-2</pv_name>
+    <pv_name>LNPstatus:ClockOut-2</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1554,7 +1554,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:ClockOut-3</pv_name>
+    <pv_name>LNPstatus:ClockOut-3</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1611,7 +1611,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:ClockOut-4</pv_name>
+    <pv_name>LNPstatus:ClockOut-4</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1668,7 +1668,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Duration-1</pv_name>
+    <pv_name>LNPstatus:Duration-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1725,7 +1725,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Duration-2</pv_name>
+    <pv_name>LNPstatus:Duration-2</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1782,7 +1782,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Duration-3</pv_name>
+    <pv_name>LNPstatus:Duration-3</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1839,7 +1839,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Duration-4</pv_name>
+    <pv_name>LNPstatus:Duration-4</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1896,7 +1896,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:SN-1</pv_name>
+    <pv_name>LNPstatus:SN-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -1953,7 +1953,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Label-1</pv_name>
+    <pv_name>LNPstatus:Label-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2010,7 +2010,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:SN-2</pv_name>
+    <pv_name>LNPstatus:SN-2</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2067,7 +2067,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Label-2</pv_name>
+    <pv_name>LNPstatus:Label-2</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2124,7 +2124,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:SN-3</pv_name>
+    <pv_name>LNPstatus:SN-3</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2181,7 +2181,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Label-3</pv_name>
+    <pv_name>LNPstatus:Label-3</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2238,7 +2238,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:SN-4</pv_name>
+    <pv_name>LNPstatus:SN-4</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2295,7 +2295,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Label-4</pv_name>
+    <pv_name>LNPstatus:Label-4</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2347,17 +2347,17 @@ $(pv_value)</tooltip>
     <auto_size>false</auto_size>
     <text></text>
     <rotation_angle>0.0</rotation_angle>
-    <show_units>true</show_units>
+    <show_units>false</show_units>
     <height>26</height>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Tank1</pv_name>
+    <pv_name>LNPstatus:WT-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <precision_from_pv>true</precision_from_pv>
+    <precision_from_pv>false</precision_from_pv>
     <widget_type>Text Input</widget_type>
     <confirm_message></confirm_message>
     <name>Text Input_20</name>
@@ -2368,7 +2368,38 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-5a76220:175f99993ec:-7aeb</wuid>
     <transparent>false</transparent>
-    <scripts />
+    <scripts>
+      <path pathString="EmbeddedJs" checkConnect="true" sfe="false" seoe="false">
+        <scriptName>Convert_from_ASCII_to_Mass</scriptName>
+        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
+
+
+var Bit3 = String.fromCharCode(PVUtil.getLong(pvs[0]));
+var Bit4 = String.fromCharCode(PVUtil.getLong(pvs[1]));
+var Bit5 = String.fromCharCode(PVUtil.getLong(pvs[2]));
+var Bit6 = String.fromCharCode(PVUtil.getLong(pvs[3]));
+var Bit7 = String.fromCharCode(PVUtil.getLong(pvs[4]));
+var Bit8 = String.fromCharCode(PVUtil.getLong(pvs[5]));
+var Bit9 = String.fromCharCode(PVUtil.getLong(pvs[6]));
+
+
+
+var mass = Bit3 + Bit4 + Bit5 + Bit6 + Bit7 + Bit8 + Bit9; 
+var tare = PVUtil.getDouble(pvs[8]);
+//var final = mass - tare;
+
+pvs[7].setValue(mass - tare);]]></scriptText>
+        <pv trig="false">SCLEP0:COMTXPDO-MAPINPUTSCHANNEL1:DATAIN2</pv>
+        <pv trig="false">SCLEP0:COMTXPDO-MAPINPUTSCHANNEL1:DATAIN3</pv>
+        <pv trig="false">SCLEP0:COMTXPDO-MAPINPUTSCHANNEL1:DATAIN4</pv>
+        <pv trig="false">SCLEP0:COMTXPDO-MAPINPUTSCHANNEL1:DATAIN5</pv>
+        <pv trig="false">SCLEP0:COMTXPDO-MAPINPUTSCHANNEL1:DATAIN6</pv>
+        <pv trig="false">SCLEP0:COMTXPDO-MAPINPUTSCHANNEL1:DATAIN7</pv>
+        <pv trig="true">SCLEP0:COMTXPDO-MAPINPUTSCHANNEL1:DATAIN8</pv>
+        <pv trig="false">LNPstatus:WT-1</pv>
+        <pv trig="true">LNPstatus:TareKg-1</pv>
+      </path>
+    </scripts>
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -2409,7 +2440,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:TareKg-1</pv_name>
+    <pv_name>LNPstatus:TareKg-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2466,7 +2497,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:TareLbs-1</pv_name>
+    <pv_name>LNPstatus:TareLbs-1</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2482,7 +2513,37 @@ $(pv_value)</tooltip>
     <enabled>true</enabled>
     <wuid>-5a76220:175f99993ec:-7ade</wuid>
     <transparent>false</transparent>
-    <scripts />
+    <scripts>
+      <path pathString="EmbeddedJs" checkConnect="true" sfe="false" seoe="false">
+        <scriptName>cnvrt_lbs_to_Kg</scriptName>
+        <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
+
+//var Kg = (PVUtil.getDouble(pvs[0]))/2.205;
+
+//pvs[1].setValue(Kg);
+
+//var mass = PVUtil.getDouble(pvs[0])
+
+//pvs[1].setValue(mass*0.4536);
+
+var Kg = PVUtil.getDouble(pvs[1]);
+var Lbs= PVUtil.getDouble(pvs[0]);
+
+var Kgchk = Kg;
+var Lbschk =Lbs;
+
+if (Kgchk != Kg){
+	pvs[0].setValue(Kg*2.205);	
+}
+
+if (Lbschk != Lbs){
+	pvs[1].setValue(Lbs/2.205);	
+}
+]]></scriptText>
+        <pv trig="true">LNPstatus:TareLbs-1</pv>
+        <pv trig="true">LNPstatus:TareKg-1</pv>
+      </path>
+    </scripts>
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -2590,7 +2651,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Automatic</pv_name>
+    <pv_name>LNPstatus:Automatic</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -2670,7 +2731,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:FillTimeHr</pv_name>
+    <pv_name>LNPstatus:FillTimeHr</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2727,7 +2788,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:FillTimeMin</pv_name>
+    <pv_name>LNPstatus:FillTimeMin</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2900,7 +2961,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:start</pv_name>
+    <pv_name>LNPstatus:start</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -3168,12 +3229,12 @@ $(pv_value)</tooltip>
     </fill_color>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPstatus:Tank1</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
     <widget_type>Tank</widget_type>
-    <name>Tank</name>
+    <name>Tank1</name>
     <show_hi>true</show_hi>
     <actions hook="false" hook_all="false" />
     <show_lo>true</show_lo>
@@ -3199,8 +3260,8 @@ $(pv_value)</tooltip>
     <scripts />
     <border_alarm_sensitive>true</border_alarm_sensitive>
     <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
+      <width_scalable>false</width_scalable>
+      <height_scalable>false</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
@@ -3212,7 +3273,7 @@ $(pv_value)</tooltip>
     <transparent_background>true</transparent_background>
     <level_lo>20.0</level_lo>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <limits_from_pv>true</limits_from_pv>
+    <limits_from_pv>false</limits_from_pv>
     <background_color>
       <color red="240" green="240" blue="240" />
     </background_color>
@@ -3786,7 +3847,7 @@ $(pv_value)</tooltip>
     <wuid>-5a76220:175f99993ec:-5ab4</wuid>
     <transparent>true</transparent>
     <auto_size>false</auto_size>
-    <text>LNFS</text>
+    <text>LNP</text>
     <scripts />
     <height>26</height>
     <border_width>1</border_width>
@@ -4203,7 +4264,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Clock</pv_name>
+    <pv_name>LNPstatus:Clock</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -4220,17 +4281,16 @@ $(pv_value)</tooltip>
     <wuid>-5a76220:175f99993ec:-592e</wuid>
     <transparent>false</transparent>
     <scripts>
-      <path pathString="EmbeddedJs" checkConnect="true" sfe="false" seoe="false">
-        <scriptName>Get_Current_Time</scriptName>
+      <path pathString="EmbeddedJs" checkConnect="false" sfe="false" seoe="false">
+        <scriptName>EmbeddedScript</scriptName>
         <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
-
 
 //////////////////////////////////////////////
 // This script is ment to be skimmed a lot 
 // H, M, S will be worked out under EPICS in the ioc machine
 //////////////////////////////////////////////
 
-var Clock = new Date();
+var Clock = Date();
 
 var H=10*(Clock.charAt(16)-'0')+(Clock.charAt(17)-'0');
 var M=10*(Clock.charAt(19)-'0')+(Clock.charAt(20)-'0');
@@ -4240,19 +4300,18 @@ pvs[0].setValue(Clock);
 pvs[1].setValue( H);
 pvs[2].setValue( M);
 pvs[3].setValue( S);
-sleep(1000);
 
 
 
 ]]></scriptText>
-        <pv trig="false">LNFSstatus:Clock</pv>
-        <pv trig="false">LNFSstatus:Hour</pv>
-        <pv trig="false">LNFSstatus:Minute</pv>
-        <pv trig="false">LNFSstatus:Second</pv>
-        <pv trig="true">LNFSstatus:TimeStamp</pv>
+        <pv trig="false">LNPstatus:Clock</pv>
+        <pv trig="false">LNPstatus:Hour</pv>
+        <pv trig="false">LNPstatus:Minute</pv>
+        <pv trig="false">LNPstatus:Second</pv>
+        <pv trig="true">LNPstatus:TimeStamp</pv>
       </path>
     </scripts>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
     <scale_options>
       <width_scalable>true</width_scalable>
       <height_scalable>true</height_scalable>
@@ -4273,7 +4332,7 @@ sleep(1000);
     </foreground_color>
     <minimum>-1.7976931348623157E308</minimum>
     <font>
-      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
+      <fontdata fontName="Ubuntu Mono" height="12" style="0" />
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -4383,7 +4442,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:cmpt-5</pv_name>
+    <pv_name>LNPstatus:cmpt-5</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -4416,7 +4475,7 @@ $(pv_value)</tooltip>
     <height>26</height>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Check-5</pv_name>
+    <pv_name>LNPstatus:Check-5</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -4484,7 +4543,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNFSstatus:cmpt-6</pv_name>
+    <pv_name>LNPstatus:cmpt-6</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -4517,7 +4576,7 @@ $(pv_value)</tooltip>
     <height>26</height>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name>LNFSstatus:Check-6</pv_name>
+    <pv_name>LNPstatus:Check-6</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -4576,7 +4635,7 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
     <visible>true</visible>
-    <pv_name></pv_name>
+    <pv_name>LNPstatus:Duration-5</pv_name>
     <selector_type>0</selector_type>
     <border_color>
       <color red="0" green="128" blue="255" />
