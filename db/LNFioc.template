@@ -18,6 +18,7 @@ record(ao,"$(device):Second"){
  field(DESC, "Second")
  field(DTYP, "Soft Channel")
  field(PINI,"YES") 
+ field(SCAN, "1 second")
 }
 record(ao,"$(device):Time"){
  field(DESC, "Time-of-the-day-in-seconds")
