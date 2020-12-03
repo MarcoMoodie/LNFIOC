@@ -1,5 +1,5 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 201202-170438
-LNPstatus:Time 49105
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 201203-154926
+LNPstatus:Time 55699
 LNPstatus:TareKg-1 120
 LNPstatus:TareLbs-1 60
 LNPstatus:FillTimeHr 10
@@ -10,14 +10,14 @@ LNPstatus:ClockOut-2
 LNPstatus:ClockOut-3 
 LNPstatus:ClockOut-4 
 LNPstatus:Fill-1 1
-LNPstatus:Fill-2 0
+LNPstatus:Fill-2 1
 LNPstatus:Fill-3 1
-LNPstatus:Fill-4 0
-LNPstatus:cmpt-1 0
-LNPstatus:cmpt-2 0
-LNPstatus:cmpt-3 0
-LNPstatus:cmpt-4 0
-LNPstatus:cmpt-5 0
+LNPstatus:Fill-4 1
+LNPstatus:cmpt-1 1
+LNPstatus:cmpt-2 1
+LNPstatus:cmpt-3 1
+LNPstatus:cmpt-4 1
+LNPstatus:cmpt-5 1
 LNPstatus:cmpt-6 0
 LNPstatus:Label-1 
 LNPstatus:Label-2 

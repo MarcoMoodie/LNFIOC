@@ -24,3 +24,15 @@ record(ao,"$(device):offset") {
 	field(EGU,"$(units)")
 	info(autosaveFields_pass0, "VAL")
 }
+
+record(ao, "LNPpt:manifold_test") {
+	field(DESC, "FakeManifoldTemp")
+	field(VAL,  "-200")
+	field(EGU,"$(units)")
+}
+
+record(ao, "LNPpt:tank_test") {
+	field(DESC, "FakeTankTemp")
+	field(VAL,  "-200")
+	field(EGU,"$(units)")
+}

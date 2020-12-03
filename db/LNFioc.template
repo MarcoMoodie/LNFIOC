@@ -88,6 +88,7 @@ record(ao,"$(device):start"){
  field(DESC, "0-stopped, 1-started")
  field(DTYP, "Soft Channel")
  field(VAL, "$(pvMin)") 
+ field(SCAN, "1 second")###please for the love of all that is good double check this
  field(PINI,"YES") 
 }
 record(ao,"$(device):init"){
@@ -382,4 +383,9 @@ record(stringin,"$(device):Label-4"){
  field(DTYP, "Soft Channel")
  field(PINI,"YES") 
  info(autosaveFields_pass0, "VAL")
+}
+
+record(stringin, "$(device):Warnings") {
+    field(DESC, "Sets warnings")
+    field(DTYP, "Soft Channel")
 }
