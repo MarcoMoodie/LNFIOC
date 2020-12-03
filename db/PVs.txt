@@ -6,37 +6,47 @@ LNPpt1:offset
 LNPpt2:offset
 LNPpt3:offset
 LNPpt4:offset
+
 LNPstatus:Automatic
+
 LNPstatus:Check-1
 LNPstatus:Check-2
 LNPstatus:Check-3
 LNPstatus:Check-4
 LNPstatus:Check-5
 LNPstatus:Check-6
+
 LNPstatus:Duration-1
 LNPstatus:Duration-2
 LNPstatus:Duration-3
 LNPstatus:Duration-4
-LNPstatus:Duration-5LNPstatus:Fill-1                                                                                                                               
+LNPstatus:Duration-5
+
+5LNPstatus:Fill-1                                                                                                                               
 LNPstatus:Fill-2
 LNPstatus:Fill-3
 LNPstatus:Fill-4
+
 LNPstatus:FillTimeHr
 LNPstatus:FillTimeMin
 LNPstatus:Hour
 LNPstatus:Minute
 LNPstatus:RunTime
 LNPstatus:Second
+
 LNPstatus:Tank1
 LNPstatus:TareKg-1
 LNPstatus:TareLbs-1
 LNPstatus:Time
 LNPstatus:TimeStamp
+
 LNPstatus:Times-1
 LNPstatus:Times-2
 LNPstatus:Times-3
 LNPstatus:Times-4
+
 LNPstatus:WT-1
+
 LNPstatus:cmpt-1
 LNPstatus:cmpt-2
 LNPstatus:cmpt-3
@@ -44,10 +54,13 @@ LNPstatus:cmpt-4
 LNPstatus:cmpt-5                                                                                                                               
 LNPstatus:cmpt-6
 LNPstatus:complete
+
 LNPstatus:detcounter
+
 LNPstatus:init
 LNPstatus:nbdet
 LNPstatus:start
+
 LNPrel:put-On-Off-1
 LNPrel:put-On-Off-2
 LNPrel:put-On-Off-3
@@ -56,6 +69,7 @@ LNPrel:put-On-Off-5
 LNPrel:put-On-Off-6
 LNPrel:put-On-Off-7
 LNPrel:put-On-Off-8
+
 LNPdet1:get-Conversion
 LNPdet2:get-Conversion
 LNPdet3:get-Conversion
@@ -64,13 +78,16 @@ LNPpt1:get-Conversion
 LNPpt2:get-Conversion
 LNPpt3:get-Conversion
 LNPpt4:get-Conversion
+
 COUPLER:ERROR_FLAG
 MASTER:CYCLE
 MASTER:MISSED
 MASTER:WORKINGCOUNTER
 COUPLER:AL_STATE
 MASTER:WCSTATE
+
 LNPstatus:Clock
+
 LNPstatus:ClockOut-1
 LNPstatus:ClockOut-2
 LNPstatus:ClockOut-3
@@ -84,4 +101,9 @@ LNPstatus:SN-2
 LNPstatus:SN-3
 LNPstatus:SN-4
 
+how to read pvs
+PVUtil.get"datatype"(pvs[x]);
+
+how to write to pvs
+pvs[x].setValue('value');
 
