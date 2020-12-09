@@ -389,3 +389,9 @@ record(stringin, "$(device):Warnings") {
     field(DESC, "Sets warnings")
     field(DTYP, "Soft Channel")
 }
+
+record(ao, "$(device):InitTime") {
+    field(DESC, "Time at fill start")
+    field(DTYP, "Soft Channel")
+    field(SCAN, "1 second")
+}
