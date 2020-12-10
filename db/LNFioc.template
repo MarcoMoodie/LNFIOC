@@ -393,5 +393,5 @@ record(stringin, "$(device):Warnings") {
 record(ao, "$(device):InitTime") {
     field(DESC, "Time at fill start")
     field(DTYP, "Soft Channel")
-    field(SCAN, "1 second")
+    field(SCAN, ".1 second")
 }
