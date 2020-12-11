@@ -715,7 +715,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNPpt6:get-Conversion</pv_name>
+    <pv_name>LNPpt5:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -767,7 +767,7 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <visible>true</visible>
-    <pv_name>LNPpt5:get-Conversion</pv_name>
+    <pv_name>LNPpt6:get-Conversion</pv_name>
     <vertical_alignment>1</vertical_alignment>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -2645,8 +2645,8 @@ $(pv_value)</tooltip>
         <scriptName>AutoFill</scriptName>
         <scriptText><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
 
-var CurMin = PVUtil.getDouble(pvs[9]);
-var CurHour = PVUtil.getDouble(pvs[8]);
+var CurMin = PVUtil.getDouble(pvs[10]);
+var CurHour = PVUtil.getDouble(pvs[9]);
 
 var FillMin = PVUtil.getDouble(pvs[3]);
 var FillHour = PVUtil.getDouble(pvs[2]);
@@ -2656,10 +2656,10 @@ var FillHour2 = FillHour + 12 ; // for second fill
 
 if( PVUtil.getDouble(pvs[0]) == 1){
 	//Fill One
-	if((CurMin == FillMin) && (CurHour = FillHour)){
+	if((CurMin == FillMin) && (CurHour == FillHour)){
 		//set cmpt = 0
-		for(var i = 0; i < 4; i++){			
-			if((PVUtil.getDouble(pvs[i+10]) == 1) && (PVUtil.getDouble(pvs[i+14]) > 0)){
+		for(var i = 0; i < 5; i++){			
+			if((PVUtil.getDouble(pvs[i+10]) == 1) && (PVUtil.getDouble(pvs[i+15]) < 2)){
 				pvs[i+4].setValue(0);
 			}		
 		}
@@ -2667,10 +2667,10 @@ if( PVUtil.getDouble(pvs[0]) == 1){
 	pvs[1].setValue(1);
 	}
 
-if((CurMin == FillMin) && (CurHour = FillHour2)){
+if((CurMin == FillMin) && (CurHour == FillHour2)){
 		//set cmpt = 0
-		for(var i = 0; i < 4; i++){			
-			if((PVUtil.getDouble(pvs[i+10]) == 1) && (PVUtil.getDouble(pvs[i+14]) == 2)){
+		for(var i = 0; i < 5; i++){			
+			if((PVUtil.getDouble(pvs[i+10]) == 1) && (PVUtil.getDouble(pvs[i+15]) == 2)){
 				pvs[i+4].setValue(0);
 			}		
 		}
@@ -2687,6 +2687,7 @@ if((CurMin == FillMin) && (CurHour = FillHour2)){
         <pv trig="false">LNPstatus:cmpt-2</pv>
         <pv trig="false">LNPstatus:cmpt-3</pv>
         <pv trig="false">LNPstatus:cmpt-4</pv>
+        <pv trig="false">LNPstatus:cmpt-5</pv>
         <pv trig="false">LNPstatus:Hour</pv>
         <pv trig="true">LNPstatus:Minute</pv>
         <pv trig="false">LNPstatus:Fill-1</pv>
@@ -4625,10 +4626,14 @@ if(PVUtil.getDouble(pvs[4]) == 1){
 	pvs[1].setValue(1);
 	}
 	
+}
+
+if((PVUtil.getDouble(pvs[1]) == 1) && (PVUtil.getDouble(pvs[3]) ==1 )){
+	pvs[5].setValue(0);
 }]]></scriptText>
         <pv trig="false">LNPstatus:Time</pv>
         <pv trig="false">LNPstatus:cmpt-5</pv>
-        <pv trig="true">LNPpt6:get-Conversion</pv>
+        <pv trig="true">LNPpt5:get-Conversion</pv>
         <pv trig="false">LNPstatus:Check-5</pv>
         <pv trig="false">LNPrel:put-On-Off-5</pv>
         <pv trig="true">LNPstatus:start</pv>
@@ -4690,7 +4695,7 @@ $(pv_value)</tooltip>
       <height_scalable>false</height_scalable>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
-    <visible>true</visible>
+    <visible>false</visible>
     <pv_name>LNPstatus:cmpt-6</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
@@ -4723,7 +4728,7 @@ $(pv_value)</tooltip>
     <pv_value />
     <height>26</height>
     <border_width>1</border_width>
-    <visible>true</visible>
+    <visible>false</visible>
     <pv_name>LNPstatus:Check-6</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />

@@ -1,8 +1,9 @@
 <components arch="linux-x86_64">
   <ethercat.EthercatMaster name="ECATM" socket="/tmp/socket0" master_index="0"/>
-  <!-- slaves 4 link up 1 -->
+  <!-- slaves 5 link up 1 -->
   <ethercat.EthercatSlave master="ECATM" name="COUPLER.0" position="0" type_rev="EK1100 rev 0x00120000"/>
   <ethercat.EthercatSlave master="ECATM" name="PTM.0" position="1" type_rev="EL3208 rev 0x00120000"/>
-  <ethercat.EthercatSlave master="ECATM" name="VLVM.0" position="2" type_rev="EL2008 rev 0x00120000"/>
-  <ethercat.EthercatSlave master="ECATM" name="SCLE.0" position="3" type_rev="EL6002 rev 0x00130000"/>
+  <ethercat.EthercatSlave master="ECATM" name="PTM.1" position="2" type_rev="EL3208 rev 0x00120000"/>
+  <ethercat.EthercatSlave master="ECATM" name="VLVM.0" position="3" type_rev="EL2008 rev 0x00120000"/>
+  <ethercat.EthercatSlave master="ECATM" name="SCLE.0" position="4" type_rev="EL6002 rev 0x00130000"/>
 </components>

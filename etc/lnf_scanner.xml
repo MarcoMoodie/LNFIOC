@@ -238,8 +238,9 @@
 <chain>
 <device type_name="EK1100" revision="0x00120000" position="0" name="COUPLER.0" />
 <device type_name="EL3208" revision="0x00120000" position="1" name="PTM.0" />
-<device type_name="EL2008" revision="0x00120000" position="2" name="VLVM.0" />
-<device type_name="EL6002" revision="0x00130000" position="3" name="SCLE.0" />
+<device type_name="EL3208" revision="0x00120000" position="2" name="PTM.1" />
+<device type_name="EL2008" revision="0x00120000" position="3" name="VLVM.0" />
+<device type_name="EL6002" revision="0x00130000" position="4" name="SCLE.0" />
 </chain>
 <sdorequests>
 </sdorequests>

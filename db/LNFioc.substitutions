@@ -16,6 +16,12 @@ pattern
 	 { SYS  DEVICE    PORT       SCAN       }
 	 { LNFP  PTMP0    PTM.0  		 "I/O Intr"	}
 }
+## second 8 Channel 12bit EL3208 *card 2* "For PT100 sensors" "Template must be made"
+file "../../db/EL3208.template" {
+pattern 
+	 { SYS  DEVICE    PORT       SCAN       }
+	 { LNFP  PTMP1    PTM.1  		 "I/O Intr"	}
+}
 ## 8 Channel Relay Couple Module EL2008 *card 3* "Template must be made"
 file "../../db/EL2008.template" {
 pattern 
@@ -68,8 +74,8 @@ pattern
  {"PT 4"  	LNPpt4 	 "LNPortable"    PTMP0   INPUT8  8   9   2   1   C     1    0	  "1 second" }
  ##you can add all PT100 modules in a simmilar fashion bellow this line
  #add 2 more PT modules for tank and overflow temp 
- #{"PT 5"  	LNPpt5 	 "LNPortable"  "NULL"  lncrate0  PTMP1   INPUT1  8   9   2   1   C     1    0	  "1 second" }
- #{"PT 6"  	LNPpt6 	 "LNPortable"  "NULL"  lncrate0  PTMP1   INPUT2  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 5"  	LNPpt5 	 "LNPortable"	 PTMP1   INPUT1  8   9   2   1   C     1    0	  "1 second" }
+ {"PT 6"  	LNPpt6 	 "LNPortable"    PTMP1   INPUT2  8   9   2   1   C     1    0	  "1 second" }
 }
 
 ###################################################################
