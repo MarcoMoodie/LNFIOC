@@ -2651,18 +2651,31 @@ var CurHour = PVUtil.getDouble(pvs[8]);
 var FillMin = PVUtil.getDouble(pvs[3]);
 var FillHour = PVUtil.getDouble(pvs[2]);
 
-if( PVUtil.getDouble(pvs[0]) == 1){
+var FillHour2 = FillHour + 12 ; // for second fill 
 
+
+if( PVUtil.getDouble(pvs[0]) == 1){
+	//Fill One
 	if((CurMin == FillMin) && (CurHour = FillHour)){
 		//set cmpt = 0
 		for(var i = 0; i < 4; i++){			
-			if(PVUtil.getDouble(pvs[i+10]) == 1){
+			if((PVUtil.getDouble(pvs[i+10]) == 1) && (PVUtil.getDouble(pvs[i+14]) > 0)){
 				pvs[i+4].setValue(0);
-			}
+			}		
 		}
-		
-		//start fill
-		pvs[1].setValue(1);
+	//start fill
+	pvs[1].setValue(1);
+	}
+
+if((CurMin == FillMin) && (CurHour = FillHour2)){
+		//set cmpt = 0
+		for(var i = 0; i < 4; i++){			
+			if((PVUtil.getDouble(pvs[i+10]) == 1) && (PVUtil.getDouble(pvs[i+14]) == 2)){
+				pvs[i+4].setValue(0);
+			}		
+		}
+	//start fill
+	pvs[1].setValue(1);
 	}
 	
 }]]></scriptText>
@@ -2827,7 +2840,7 @@ $(pv_value)</tooltip>
     <auto_size>false</auto_size>
     <text></text>
     <rotation_angle>0.0</rotation_angle>
-    <show_units>true</show_units>
+    <show_units>false</show_units>
     <height>36</height>
     <multiline_input>false</multiline_input>
     <border_width>1</border_width>
@@ -2837,7 +2850,7 @@ $(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
-    <precision_from_pv>true</precision_from_pv>
+    <precision_from_pv>false</precision_from_pv>
     <widget_type>Text Input</widget_type>
     <confirm_message></confirm_message>
     <name>Text Input_25</name>
@@ -4924,63 +4937,6 @@ pvs[0].setValue(3600.0*H+60*M+S);
     </background_color>
     <width>100</width>
     <x>125</x>
-    <y>0</y>
-    <maximum>1.7976931348623157E308</maximum>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <minimum>-1.7976931348623157E308</minimum>
-    <font>
-      <opifont.name fontName="Ubuntu" height="11" style="0">Default</opifont.name>
-    </font>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
-    <alarm_pulsing>false</alarm_pulsing>
-    <precision>0</precision>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <horizontal_alignment>0</horizontal_alignment>
-    <rules />
-    <pv_value />
-    <auto_size>false</auto_size>
-    <text></text>
-    <rotation_angle>0.0</rotation_angle>
-    <show_units>true</show_units>
-    <height>66</height>
-    <multiline_input>false</multiline_input>
-    <border_width>1</border_width>
-    <visible>true</visible>
-    <pv_name>LNPstatus:Warnings</pv_name>
-    <selector_type>0</selector_type>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <precision_from_pv>true</precision_from_pv>
-    <widget_type>Text Input</widget_type>
-    <confirm_message></confirm_message>
-    <name>Text Input_29</name>
-    <style>0</style>
-    <actions hook="false" hook_all="false" />
-    <border_style>3</border_style>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <enabled>true</enabled>
-    <wuid>-6eaa39b4:1762784c722:-79e6</wuid>
-    <transparent>false</transparent>
-    <scripts />
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <format_type>0</format_type>
-    <limits_from_pv>false</limits_from_pv>
-    <background_color>
-      <color name="WritePV_Background" red="128" green="255" blue="255" />
-    </background_color>
-    <width>333</width>
-    <x>347</x>
     <y>0</y>
     <maximum>1.7976931348623157E308</maximum>
     <foreground_color>

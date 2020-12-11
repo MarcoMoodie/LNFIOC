@@ -1,22 +1,22 @@
-# autosave R5.3	Automatically generated - DO NOT MODIFY - 201210-152300
-LNPstatus:Time 54134
-LNPstatus:TareKg-1 120
-LNPstatus:TareLbs-1 60
-LNPstatus:FillTimeHr 12
-LNPstatus:FillTimeMin 52
+# autosave R5.3	Automatically generated - DO NOT MODIFY - 201211-103234
+LNPstatus:Time 37953
+LNPstatus:TareKg-1 180
+LNPstatus:TareLbs-1 70
+LNPstatus:FillTimeHr 10
+LNPstatus:FillTimeMin 7
 LNPstatus:Automatic 1
-LNPstatus:ClockOut-1 Thu Dec 10 2020 12:47:17 GMT+0200 (SAST
+LNPstatus:ClockOut-1 Fri Dec 11 2020 10:05:54 GMT+0200 (SAST
 LNPstatus:ClockOut-2 Thu Dec 10 2020 12:47:20 GMT+0200 (SAST
-LNPstatus:ClockOut-3 Thu Dec 10 2020 12:47:25 GMT+0200 (SAST
+LNPstatus:ClockOut-3 Fri Dec 11 2020 10:07:58 GMT+0200 (SAST
 LNPstatus:ClockOut-4 Thu Dec 10 2020 12:47:36 GMT+0200 (SAST
-LNPstatus:Fill-1 1
+LNPstatus:Fill-1 0
 LNPstatus:Fill-2 0
 LNPstatus:Fill-3 0
 LNPstatus:Fill-4 0
-LNPstatus:cmpt-1 0
-LNPstatus:cmpt-2 0
-LNPstatus:cmpt-3 0
-LNPstatus:cmpt-4 0
+LNPstatus:cmpt-1 1
+LNPstatus:cmpt-2 1
+LNPstatus:cmpt-3 1
+LNPstatus:cmpt-4 1
 LNPstatus:cmpt-5 1
 LNPstatus:cmpt-6 0
 LNPstatus:Label-1 
