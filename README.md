@@ -9,5 +9,5 @@ This repo also has the .template files for the EL2008, EL3208 and EL6002 beckhof
 
 # System and application versions
 OS: Ubuntu 16.04.1
-Kernel Version: 4.4.0-194-generic
+Kernel Version: 4.4.0-31-generic
 ethercat: 4-3
